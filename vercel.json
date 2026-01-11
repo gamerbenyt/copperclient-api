@@ -1,5 +1,15 @@
 {
   "version": 2,
+  "rewrites": [
+    { 
+      "source": "/api/v1/core/oauth/discord", 
+      "destination": "/api/discord.js" 
+    },
+    { 
+      "source": "/api/v1/core/oauth/github", 
+      "destination": "/api/github.js" 
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",
