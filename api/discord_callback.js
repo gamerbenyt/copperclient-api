@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         client_secret: process.env.DISCORD_CLIENT_SECRET,
         grant_type: 'authorization_code',
         code: code,
-        redirect_uri: 'https://copper-api.vercel.app/api/discord_callback',
+        redirect_uri: 'https://copperclient-api.vercel.app/api/discord_callback',
       }).toString(),
       { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }
     );
